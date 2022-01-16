@@ -1,6 +1,6 @@
 # Click2call para Asterisk com Python
 
-Este projeto disponibiliza uma API construída em python contendo uma rota para Click2call e listagem de ramais em tempo real. Ela pode ser integrada a qualquer servidor Asterisk.
+Este projeto disponibiliza uma API construída em python contendo uma rota para Click2call e outra para listagem de ramais em tempo real. Ela pode ser integrada a qualquer servidor Asterisk.
 
 <b><h3>Requisitos</h3></b>
 
