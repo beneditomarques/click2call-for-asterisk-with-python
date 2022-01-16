@@ -24,6 +24,7 @@ Você poderá alterar o usuário e senha também.
 [root@server:/etc/asterisk]# rasterisk -x 'manager reload'
 ```
 
+
 <b><h3>Deploy</h3></b>
 
 1. Definir as variáveis de ambiente:
