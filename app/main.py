@@ -37,7 +37,7 @@ def click2call(body: models.Click2call, credentials: HTTPBasicCredentials = Depe
     dst      = data['dst']
     context  = data['context']
 
-    if username != 'superuser' or password != 'supersecret':    
+    if username != os.environ['HTTP_AUTH_USER'] or password != os.environ['HTTP_AUTH_PASSWORD']:    
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Incorrect username or password",
