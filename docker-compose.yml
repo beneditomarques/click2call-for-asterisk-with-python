@@ -1,0 +1,21 @@
+version: "3.2"
+services:
+  app:
+    build:
+      context: .
+    env_file:
+      - .env   
+    volumes:      
+      - ./app/:/app
+    ports:
+      - "8000:8000/tcp"          
+    deploy:         
+      mode: replicated      
+      replicas: 1    
+  redis:
+    image: redis:latest      
+    deploy:         
+      mode: replicated      
+      replicas: 1    
+
+
